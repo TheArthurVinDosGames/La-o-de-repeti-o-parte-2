@@ -1,0 +1,21 @@
+public class CrescimentoAlunos {
+
+    public static void main(String[] args) {
+        double aJ = 134; 
+        double aP = 145; 
+
+        double cJ = 2.5; 
+        double cP = 2.0;
+
+        int anos = 0;
+
+        while (alturaJoao <= alturaPedro) {
+            aJ += cJ;
+            aP += cP;
+
+            anos++;
+        }
+
+        System.out.println("Levará " + anos + " anos para João ficar mais alto que Pedro.");
+    }
+}
