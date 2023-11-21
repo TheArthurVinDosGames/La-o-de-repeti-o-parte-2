@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class CalculadoraPotencia {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Digite a base: ");
+        double b = in.nextDouble();
+
+        System.out.print("Digite o expoente: ");
+        int exp = in.nextInt();
+
+
+        double r = 1;
+
+        if (exp >= 0) {
+            for (int i = 0; i < exp; i++) {
+                r *= b;
+            }
+        } else {
+            for (int i = 0; i > exp; i--) {
+                r /= b;
+            }
+        }
+
+        System.out.println(b + " elevado a " + exp + " é igual a: " + r);
+	in.close();
+    }
+}
